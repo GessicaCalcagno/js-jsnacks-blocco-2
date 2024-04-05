@@ -10,8 +10,10 @@
 // chiedo all'utente 2 parole
 // creo la funzione di paragone
 
-const word1 = prompt("Inserisci la prima parola:");
-const word2 = prompt("Inserisci la seconda parola:");
+const userWord1 = prompt("Inserisci la prima parola:");
+console.log(userWord1);
+const userWord2 = prompt("Inserisci la seconda parola:");
+console.log(userWord2);
 
-const finalResult = equalWord(1, 2);
+const finalResult = equalWord(userWord1, userWord2);
 console.log(finalResult);
