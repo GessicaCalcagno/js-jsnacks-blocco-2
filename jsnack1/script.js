@@ -12,28 +12,76 @@
 //"use strict";
 //**************************************************** */
 
+// 1- chiedere un numero all'utente
+// 2- Finchè non raggiunge il numero N detto dall'utente, devi creare un Array e stamparlo a schermo
+
 const userChoice = parseInt(prompt("Dimmi un numero"));//Number
 console.log(userChoice);
 
-function generateArray(numbArray){
-    let arrays = [];
-for ( let i = 0; i < numbArray; i++){
+
+for (let i = 0; i < userChoice; i++){
+    let newArray = generateArray()
+    console.log(newArray);
+
+}
+
+
+/**
+ * Description: crea un array di 10 numeri random
+ * @returns {array}
+ */ 
+function generateArray(){
     let array = [];
-    for (let j = 0; j < 10 ; j++){
-        array.push(Math.floor(Math.random()* 100) + 1);
+    for (let i = 0; i < 10; i++){
+        let = numbInArray = getRndInteger(1, 100);
+
+        array.push(numbInArray);
     }
 
-    arrays.push(array);
+    return array
 
-}
+ }
 
-return arrays;
+ function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }
 
-}
 
 
-let newArrays = generateArray(userChoice);
-console.log(newArrays);
+
+/**
+ * Description: stampa l'array in pagina
+ * @param {array} arrayToPrint
+ * @returns {} niente perchè è void
+ */
+  function printArray(arrayToPrint){
+    const resultElem = document.getElementById("result");
+    console.log(arrayToPrint);
+
+    resultElem.innerHTML += ` <li> ${arrayToPrint} <li> `;
+  }
+
+
+
+// function generateArray(numbArray){
+//     let arrays = [];
+// for ( let i = 0; i < numbArray; i++){
+//     let array = [];
+//     for (let j = 0; j < 10 ; j++){
+//         array.push(Math.floor(Math.random()* 100) + 1);
+//     }
+
+//     arrays.push(array);
+
+// }
+
+// return arrays;
+
+// }
+
+
+// let newArrays = generateArray(userChoice);
+// console.log(newArrays);
 
 //Output
 
