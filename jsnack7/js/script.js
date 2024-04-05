@@ -7,3 +7,9 @@
 
 // TEST
 //alert('ciao')
+
+const arrayInput = [1, 2, 3, 4, 6];
+console.log(arrayInput);
+
+let finalArray = rimuoviDallaTesta(arrayInput);
+console.log(finalArray);
