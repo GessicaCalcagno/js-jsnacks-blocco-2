@@ -4,3 +4,9 @@
 
 // TEST
 //alert('ciao')
+
+const arrayInput = [1, 2, 3, 4, 5];
+console.log(arrayInput);
+
+let finalArray = rimuoviDallaCoda(arrayInput);
+console.log(finalArray)
